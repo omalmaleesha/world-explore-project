@@ -200,4 +200,24 @@ body {
     box-shadow: 0 0 0.6em .25em var(--glow-color),
            0 0 2.5em 2em var(--glow-spread-color),
            inset 0 0 .5em .25em var(--glow-color);
-   }
+}
+
+
+
+.details-panel {
+    display: none;
+    position: absolute; /* Ensures panel overlays on top of other content */
+    z-index: 1000; /* Adjust z-index as needed to ensure it's above other elements */
+    transition: transform 0.3s ease-out;
+    transform: translateY(-100%);
+    width: 27%; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Example background color */
+    padding: 10px; /* Padding for content inside the panel */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Example box shadow */
+}
+
+.details-panel.show {
+    display: block;
+    transform: translateY(0%);
+}

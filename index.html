@@ -47,103 +47,84 @@
 
 
     <div class="container-fluid mt-4">
-        <div class="row justify-content-center">
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img/230817122249-01-eiffel-tower-081623-file.jpg" alt="Eiffel Tower" class="card-img-top">
+        <div class="row justify-content-center" id="card-container">
+            <!-- Card 1 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(0)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-0" class="card-img-top">
                     <div class="card-body">
-                        <p class="heading">France</p>
-                        <p>Timeless elegance and cultural allure intertwined with history and romance.</p>
+                        <p class="heading" id="country-name-0">France</p>
+                        <p id="country-detail-0">Timeless elegance and cultural allure intertwined with history and romance.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img\1677857739507-infosyst-aust.jpg" alt="Australia" class="card-img-top">
-                    <div class="card-body">
-                        <p class="heading">Australia</p>
-                        <p>Vast landscapes, diverse wildlife, and vibrant cities at the edge of the world.</p>
-                    </div>
+                <div class="details-panel" id="details-panel-0">
+                    <button onclick="closePanel(0)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-0"></div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img\berlin-rotes-rathaus-town-city-hall-skyline-germany-aerial-view-portrait-format_770123-463.jpg" alt="Berlin" class="card-img-top">
+    
+            <!-- Card 2 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(1)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-1" class="card-img-top">
                     <div class="card-body">
-                        <p class="heading">Berlin</p>
-                        <p>A blend of rich history artistic innovation in the heart of Europe.</p>
+                        <p class="heading" id="country-name-1">Australia</p>
+                        <p id="country-detail-1">Vast landscapes, diverse wildlife, and vibrant cities at the edge of the world.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img\what-is-japan-known-for-mt-fuji-hero-375x540.jpg" alt="Japan" class="card-img-top">
-                    <div class="card-body">
-                        <p class="heading">Japan</p>
-                        <p>harmonious fusion of tradition,cutting-edge technology natural beauty.</p>
-                    </div>
+                <div class="details-panel " id="details-panel-1">
+                    <button onclick="closePanel(1)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-1"></div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img\230516112548-01-crossroads-maldives-aerial.jpg" alt="Maldives" class="card-img-top">
+    
+            <!-- Card 3 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(2)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-2" class="card-img-top">
                     <div class="card-body">
-                        <p class="heading">Maldives</p>
-                        <p>Pristine turquoise waters,secluded white-sand beaches in a tropical paradise</p>
+                        <p class="heading" id="country-name-2">Berlin</p>
+                        <p id="country-detail-2">A blend of rich history artistic innovation in the heart of Europe.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid mt-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img/230817122249-01-eiffel-tower-081623-file.jpg" alt="Eiffel Tower" class="card-img-top">
-                    <div class="card-body">
-                        <p class="heading">France</p>
-                        <p>Timeless elegance and cultural allure intertwined with history and romance.</p>
-                    </div>
+                <div class="details-panel" id="details-panel-2">
+                    <button onclick="closePanel(2)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-2"></div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img\1677857739507-infosyst-aust.jpg" alt="Australia" class="card-img-top">
+    
+            <!-- Card 4 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(3)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-3" class="card-img-top">
                     <div class="card-body">
-                        <p class="heading">Australia</p>
-                        <p>Vast landscapes, diverse wildlife, and vibrant cities at the edge of the world.</p>
+                        <p class="heading" id="country-name-3">Japan</p>
+                        <p id="country-detail-3">Harmonious fusion of tradition, cutting-edge technology, and natural beauty.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img\berlin-rotes-rathaus-town-city-hall-skyline-germany-aerial-view-portrait-format_770123-463.jpg" alt="Berlin" class="card-img-top">
-                    <div class="card-body">
-                        <p class="heading">Berlin</p>
-                        <p>A blend of rich history artistic innovation in the heart of Europe.</p>
-                    </div>
+                <div class="details-panel" id="details-panel-3">
+                    <button onclick="closePanel(3)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-3"></div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img\what-is-japan-known-for-mt-fuji-hero-375x540.jpg" alt="Japan" class="card-img-top">
+    
+            <!-- Card 5 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(4)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-4" class="card-img-top">
                     <div class="card-body">
-                        <p class="heading">Japan</p>
-                        <p>harmonious fusion of tradition,cutting-edge technology natural beauty.</p>
+                        <p class="heading" id="country-name-4">Maldives</p>
+                        <p id="country-detail-4">Pristine turquoise waters, secluded white-sand beaches in a tropical paradise.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-flex justify-content-center align-items-center">
-                <div class="card">
-                    <img src="img\230516112548-01-crossroads-maldives-aerial.jpg" alt="Maldives" class="card-img-top">
-                    <div class="card-body">
-                        <p class="heading">Maldives</p>
-                        <p>Pristine turquoise waters,secluded white-sand beaches in a tropical paradise</p>
-                    </div>
+                <div class="details-panel end-0" id="details-panel-4">
+                    <button onclick="closePanel(4)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-4"></div>
                 </div>
             </div>
+    
+            <!-- Repeat similar structure for additional cards -->
+    
         </div>
     </div>
     
@@ -151,8 +132,95 @@
 
 
 
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center" id="card-container">
+            <!-- Card 1 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(5)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-5" class="card-img-top">
+                    <div class="card-body">
+                        <p class="heading" id="country-name-5">France</p>
+                        <p id="country-detail-5">Timeless elegance and cultural allure intertwined with history and romance.</p>
+                    </div>
+                </div>
+                <div class="details-panel" id="details-panel-5">
+                    <button onclick="closePanel(5)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-5"></div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(6)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-6" class="card-img-top">
+                    <div class="card-body">
+                        <p class="heading" id="country-name-6">Australia</p>
+                        <p id="country-detail-6">Vast landscapes, diverse wildlife, and vibrant cities at the edge of the world.</p>
+                    </div>
+                </div>
+                <div class="details-panel " id="details-panel-6">
+                    <button onclick="closePanel(6)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-6"></div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(7)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-7" class="card-img-top">
+                    <div class="card-body">
+                        <p class="heading" id="country-name-7">Berlin</p>
+                        <p id="country-detail-7">A blend of rich history artistic innovation in the heart of Europe.</p>
+                    </div>
+                </div>
+                <div class="details-panel" id="details-panel-7">
+                    <button onclick="closePanel(7)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-7"></div>
+                </div>
+            </div>
+    
+            <!-- Card 4 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(8)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-8" class="card-img-top">
+                    <div class="card-body">
+                        <p class="heading" id="country-name-8">Japan</p>
+                        <p id="country-detail-8">Harmonious fusion of tradition, cutting-edge technology, and natural beauty.</p>
+                    </div>
+                </div>
+                <div class="details-panel" id="details-panel-8">
+                    <button onclick="closePanel(8)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-8"></div>
+                </div>
+            </div>
+    
+            <!-- Card 5 -->
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-3 d-grid justify-content-center align-items-center">
+                <div class="card" onclick="togglePanel(9)">
+                    <img src="img/placeholder.jpg" alt="Country Image" id="country-img-9" class="card-img-top">
+                    <div class="card-body">
+                        <p class="heading" id="country-name-9">Maldives</p>
+                        <p id="country-detail-9">Pristine turquoise waters, secluded white-sand beaches in a tropical paradise.</p>
+                    </div>
+                </div>
+                <div class="details-panel end-0" id="details-panel-9">
+                    <button onclick="closePanel(9)" class="btn btn-secondary mb-2">Close</button>
+                    <div id="panel-content-9"></div>
+                </div>
+            </div>
+    
+            <!-- Repeat similar structure for additional cards -->
+    
+        </div>
+    </div>
+    
+    
 
 
+
+
+
+<!-- Footer -->
 
     <div class="container">
         <footer class="py-3 my-4">
