@@ -14,6 +14,7 @@ function closePanel(index) {
 
 
 document.addEventListener('DOMContentLoaded',() => {
+    clickedButton();
     getRandomCountryInfo(10);
 });
 const fallbackImages = [
@@ -23,6 +24,17 @@ const fallbackImages = [
     'https://source.unsplash.com/random/300x200?sea',
     'https://source.unsplash.com/random/300x200?mountain'
 ];
+
+async function clickedButton(){
+
+  const navigationHomeButton = document.getElementById("search_btn");
+  if (navigationHomeButton) {
+    navigationHomeButton.addEventListener("click", function () {
+      window.location.href = "/searchPage.html";
+    });
+  }
+
+}
 async function getRandomCountryInfo(count){
     try{
         //get all countries from REST API

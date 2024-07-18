@@ -212,12 +212,46 @@ body {
     transform: translateY(-100%);
     width: 27%; /* Adjust width as needed */
     height: 300px; /* Adjust height as needed */
-    background-color: #f0f0f0; /* Example background color */
+    background-color: #9b9b9bfa; /* Example background color */
     padding: 10px; /* Padding for content inside the panel */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Example box shadow */
+    box-shadow: 0 0 50px rgb(0, 0, 0); /* Example box shadow */
 }
 
 .details-panel.show {
     display: block;
     transform: translateY(0%);
+}
+@media (max-width: 768px) {
+  
+
+    .details-panel {
+        width: 90%; /* Make details panel almost full width on small screens */
+        height: 29vh; /* Adjust height to auto for better responsiveness */
+        left: 5%; /* Center the panel horizontally */
+        right: 5%; /* Center the panel horizontally */
+        transform: translateY(0); /* Show the panel fully */
+    }
+
+    .details-panel.show {
+        transform: none; /* Remove translateY for smoother visibility */
+    }
+}
+
+
+
+
+
+.photo {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    max-width: 100px;
+    max-height: 100px;
+    z-index: 1; /* Ensure the image is in front */
+    position: relative; /* Position relative for z-index to work */
+}
+
+.background-div {
+    background-color: #007bff2d;
+    position: relative; /* Position relative for absolute children */
+    padding: 20px;
 }
