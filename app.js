@@ -30,7 +30,7 @@ async function clickedButton(){
   const navigationHomeButton = document.getElementById("search_btn");
   if (navigationHomeButton) {
     navigationHomeButton.addEventListener("click", function () {
-      window.location.href = "/searchPage.html";
+      window.location.href = "searchPage.html";
     });
   }
 
